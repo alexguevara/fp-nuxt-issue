@@ -1,0 +1,76 @@
+{
+  "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 140,
+
+  // we do not use auto formating. We use
+  // shft+alt+f key binding for 'eslint --fix' instead
+  "editor.formatOnSave": false,
+
+  // == Files ==
+  "files.exclude": {
+    "**/*.log": true,
+    "**/*.log*": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+  "vetur.format.enable": true,
+  "vetur.validation.script": false,
+  "vetur.validation.style": false,
+  "vetur.validation.template": false,
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "aligned-multiple"
+    },
+    "prettyhtml": {
+      "printWidth": 140,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": true
+    },
+  },
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "json.format.enable": false,
+  "javascript.validate.enable": false,
+
+  // == Linting ==
+  "eslint.enable": true,
+  // we use shft+alt+f key binding for eslint --fix
+  "eslint.autoFixOnSave": false,
+  "eslint.alwaysShowStatus": true,
+  "eslint.options": {
+    "extensions": [ ".html", ".js", ".vue", ".jsx" ]
+  },
+  "eslint.validate": [
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    }
+  ],
+  "stylelint.enable": true,
+
+  // == Testing ==
+  "jest.autoEnable": false,
+  "typescript.surveys.enabled": false,
+}
